@@ -1,0 +1,162 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	scroll-behavior: smooth;
+}
+picture {
+	display: inline-block;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container{
+  padding: 0 20px;
+}
+
+.level__name{
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.btn{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #282c34;
+  background: #61dafb;
+  transition: .2s linear;
+}
+.btn:hover{
+  background: #282c34;
+  color: #61dafb;
+  outline: 1px solid #61dafb;
+}
+
+.first__h1{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+input {
+  color: #282c34;
+  margin-top: 10px;
+  outline: 1px solid #282c34;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+/* ---------CALC----------*/
+
+.calc{
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  outline: 1px solid #282c34;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #282c34;
+  background: #61dafb;
+  transition: .2s linear;
+  margin-right: 10px;
+  outline: 1px solid #282c34;
+}
+button:hover{
+  background: #282c34;
+  color: #61dafb;
+  outline: 1px solid #61dafb;
+}
+.inputs-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.level__third{
+  margin-top: 20px;
+}
+.game__title{
+  padding-top: 10px;
+}
+
+.rect{
+  color: #282c34;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 400px;
+  min-height: 150px;
+  background: #61dafb;
+  outline: 1px solid #282c34;
+}
+
+#result{
+  display: flex;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    top: 24%;
+    right: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 100px;
+    overflow: hidden;
+}

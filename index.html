@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>hw17-js-basic</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="level__first">
+        <p class="level__name">Level 1</p>
+        <button id="button" class="btn">Click me!</button>
+        <h1 class="first__h1" id="h1">Some text</h1>
+        <input id="input" type="text" class="input" id="plus">
+        <button class="btn" id="btn">Add!</button>
+      </div>
+
+
+      <div class="level__second">
+        <p class="level__name">Level 2</p>
+        <div class="calc">
+          <div class="inputs-container">
+            <label>
+              First value:
+              <input id="value1" type="text" class="value1" />
+            </label>
+            <label>
+              Second value:
+              <input id="value2" type="text" class="value2" />
+            </label>
+            <div id="result"></div>
+          </div>
+          <div class="buttons-container">
+            <button id="add">+</button>
+            <button id="sub">-</button>
+            <button id="multiply">*</button>
+            <button id="division">/</button>
+            <button id="equal">=</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="level__third">
+        <p class="level__name">Level 3</p>
+        <div>
+          <input id="game" type="number" />
+          <h3 class="game__title">Left: <span id="count" class="count"></span></h3>
+          <div id="rect" class="rect"></div>
+        </div>
+      </div>
+      <div id="btnContainer" class="level__fourth">
+        <p class="level__name">Level 4</p>
+        <input id="inputColor" type="text" class="input">
+        <button class="btn" id="create">Create!</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
