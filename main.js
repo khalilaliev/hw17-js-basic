@@ -23,9 +23,9 @@ button.addEventListener("dblclick", () => {
 
 // --------task-2-------- //
 
-document.addEventListener("keyup", (event) => {
-  alert(event.key);
-});
+// document.addEventListener("keyup", (event) => {
+//   alert(event.key);
+// });
 
 // --------task-3-------- //
 
@@ -139,18 +139,20 @@ simpleGame();
 
 // --------task-3-------- //
 
-const buttonsContainer = document.getElementById("btnContainer");
-const createBtn = document.getElementById("create");
-const inputColor = document.getElementById("inputColor");
+const inputColor = document.querySelector("#inputColor");
+const btnContainer = document.querySelector("#btnContainer");
+const createButton = document.querySelector("#create");
 
-function createButton() {
-  createBtn.addEventListener("click", () => {
-    const createdButton = document.createElement("button");
-    createdButton.innerText = `${inputColor.value}`;
-    createdButton.addEventListener("click", () => {
-      document.body.style.backgroundColor = `${inputColor.value}`;
+function createButtonColor() {
+  createButton.addEventListener("click", () => {
+    const button = document.createElement("button");
+    const color = inputColor.value;
+    button.innerHTML = color;
+    button.addEventListener("click", () => {
+      document.body.style.backgroundColor = color;
     });
-    buttonsContainer.appendChild(createdButton);
+    btnContainer.appendChild(button);
   });
 }
-createButton();
+
+createButtonColor();
